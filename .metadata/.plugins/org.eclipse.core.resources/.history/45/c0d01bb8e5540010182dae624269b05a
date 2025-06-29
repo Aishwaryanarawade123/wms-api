@@ -1,0 +1,5 @@
+package com.pbh.wms.controller;
+
+public class InventoryController {
+
+}

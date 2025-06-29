@@ -1,0 +1,15 @@
+package com.pbh.wms.model;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Inventory {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private int quantity;
+    private String location;
+
+    // Getters and setters
+}

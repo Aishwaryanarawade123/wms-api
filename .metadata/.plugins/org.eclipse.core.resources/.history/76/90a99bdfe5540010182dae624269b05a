@@ -1,0 +1,5 @@
+package com.pbh.wms.model;
+
+public class Inventory {
+
+}
