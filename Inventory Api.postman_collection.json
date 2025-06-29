@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "26e673eb-2032-4026-a776-676fe8cb63b0",
+		"name": "Inventory Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38140431"
+	},
+	"item": [
+		{
+			"name": "AddInventory",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Hard Disk\",\r\n  \"quantity\": 15,\r\n  \"location\": \"Rack F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllInventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateInventoryById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"CPU\",\r\n  \"quantity\": 15,\r\n  \"location\": \"Rack E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteInventoryById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInventoryById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
